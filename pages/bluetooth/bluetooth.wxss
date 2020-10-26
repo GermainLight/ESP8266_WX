@@ -1,0 +1,40 @@
+/* pages/bluetooth/bluetooth.wxss */
+
+.deviceContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.deviceItemContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem;
+  padding: 0.4rem 0.9rem;
+  background-color: #eeeeee;
+}
+
+.deviceItemMainContainer {
+  flex-grow: 1;
+}
+
+.deviceItemAddtitionContainer {
+  width: 50rpx;
+}
+
+.deviceItemName {
+  font-size: 1rem;
+}
+
+.deviceItemMac {
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.deviceItemRSSI {
+  color: grey;
+  font-size: 0.8rem;
+  justify-content: center;
+  align-items: center;
+}

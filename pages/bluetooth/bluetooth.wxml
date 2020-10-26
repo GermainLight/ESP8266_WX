@@ -1,0 +1,20 @@
+<block wx:if="{{bluetoothAdapterDiscovering}}">
+	<button bindtap="stopScanBleDevice">停止扫描</button>
+</block>
+<block wx:else>
+	<button bindtap="startScanBleDevice">扫描设备</button>
+</block>
+
+<scroll-view class="deviceContainer" scroll-y="true" style="height: 80vh;">
+	<view wx:for="{{foundDevices}}" wx:key="deviceId" wx:for-item="device">
+		<view class="deviceItemContainer" data-deviceid="{{device.deviceId}}" bindtap="onConnectDevice">
+			<view class="deviceItemMainContainer">
+				<view class="deviceItemName">{{device.name}}</view>
+				<view class="deviceItemMac">{{device.deviceId}}</view>
+			</view>
+			<view class="deviceItemAddtitionContainer">
+				<view class="deviceItemRSSI">{{device.RSSI}}</view>
+			</view>
+		</view>
+	</view>
+</scroll-view>

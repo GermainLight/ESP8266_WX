@@ -1,0 +1,90 @@
+.message-send {
+	width: 90vw;
+	margin: 1rem auto;
+	display: flex;
+	flex-direction: column;
+	background-color: darkgrey;
+	border-radius: 5px;
+	padding: 0.5rem;
+}
+
+.message-receive {
+	width: 90vw;
+	margin: 1rem auto;
+	display: flex;
+	flex-direction: column;
+	background-color: darkkhaki;
+	border-radius: 5px;
+	padding: 0.5rem;
+}
+
+.message-title {
+	align-self: flex-start;
+	font-size: 1rem;
+	word-break: break-all;
+}
+
+.message-summary {
+	display: flex;
+	flex-direction: row;
+	font-size: 0.9rem;
+	margin: 0.5rem 0;
+	word-break: break-all;
+}
+
+.message-cmd {
+	padding-right: 1rem;
+	margin-right: 1rem;
+	word-break: break-all;
+}
+
+.message-key {
+	padding-right: 1rem;
+	margin-right: 1rem;
+	word-break: break-all;
+}
+
+.message-seq {
+	padding-right: 1rem;
+	margin-right: 1rem;
+	word-break: break-all;
+}
+
+.message-payload {
+	margin: 0.5rem 0;
+	align-self: flex-start;
+	word-break: break-all;
+}
+
+.message-raw {
+	margin: 0.5rem 0;
+	font-size: 0.9rem;
+	color: gray;
+	word-break: break-all;
+}
+
+.button-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0.2rem;
+}
+
+.button {
+	width: 300rpx;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 1rem;
+	color: #333333;
+	background-color: lightslategrey;
+	margin: 0.5rem 0.8rem;
+	height: 3rem;
+	line-height: 2rem;
+	cursor: pointer;
+}

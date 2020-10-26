@@ -1,0 +1,48 @@
+<view>
+	<scroll-view scroll-y="true" style="height: 800rpx;">
+		<view wx:for="{{messages}}" wx:for-item="message">
+			<view class="{{message.type === 'send' ? 'message-send':'message-receive'}}">
+				<view class="message-title">{{message.title}}</view>
+				<view class="message-summary">
+					<view class="message-cmd">CMD: {{message.cmd}}</view>
+					<view class="message-key">KEY: {{message.key}}</view>
+					<view class="message-seq">SEQ: {{message.seq}}</view>
+				</view>
+				<view class="message-payload">PAYLOAD: {{message.payload}}</view>
+				<view class="message-raw">RAW: {{message.raw}}</view>
+			</view>
+		</view>
+	</scroll-view>
+	<view class="button-container">
+		<view class="button">
+			<view bindtap="onQueryFramwareInfo">查询固件信息</view>
+		</view>
+		<view class="button">
+			<view bindtap="onQueryFramwareCompatibility">查询固件兼容信息</view>
+		</view>
+		<view class="button">
+			<picker mode="date" start="2000-01-01" bindchange="onSyncStepByStep">同步计步数据</picker>
+		</view>
+		<view class="button">
+			<picker mode="date" start="2000-01-01" bindchange="onSyncHeartBeat">同步心率数据</picker>
+		</view>
+		<view class="button">
+			<picker mode="date" start="2000-01-01" bindchange="onSyncSleep">同步睡眠数据</picker>
+		</view>
+		<view class="button">
+			<view bindtap="onSyncBloodPressure">同步血压数据</view>
+		</view>
+		<view class="button">
+			<view bindtap="onSyncBloodOxygen">同步血氧数据</view>
+		</view>
+		<view class="button">
+			<view bindtap="onSearchDevice">查找设备</view>
+		</view>
+		<view class="button">
+			<view bindtap="onQueryDeviceBattery">查询设备电量</view>
+		</view>
+		<view class="button">
+			<view bindtap="onCloseBLEConnection">断开蓝牙连接</view>
+		</view>
+	</view>
+</view>
